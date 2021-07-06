@@ -3,27 +3,111 @@
 
 <head>
     <title>Kenny's Informative Website</title>
+    <style>
+        body {
+            background: rgb(15, 23, 138);
+            color: rgb(15, 23, 138);
+            padding: 10px;
+            font-family: arial;
+        }
+
+        #all-contents {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* navigation menu */
+        nav {
+            background: rgb(102, 204, 245);
+            margin: 0 auto;
+            margin-bottom: 20px;
+            display: flex;
+            padding: 10px;
+        }
+
+        h1 {
+            display: flex;
+            align-items: center;
+            text-shadow: 2px 2px #ff0000;
+            color: rgb(15, 23, 138);
+            flex: 1;
+            margin: 0;
+        }
+
+        #nav-ul {
+            list-style-image: none;
+        }
+
+        .nav-li {
+            display: inline-block;
+            padding: 0 10px;
+        }
+
+        a {
+            text-decoration: underline;
+            color: rgb(15, 23, 138);
+        }
+
+        /* main container area beneath menu */
+        main {
+            background: rgb(102, 204, 245);
+            display: flex;
+        }
+
+        .sidebar {
+            margin-right: 25px;
+            padding: 10px;
+        }
+
+        .sidebar-img {
+            width: 200px;
+        }
+
+        .content {
+            flex: 1;
+            padding: 15px;
+        }
+
+        #interests {
+            border: 4px rgb(6, 88, 241) ridge;
+            padding: 8px;
+        }
+
+        h2,
+        h3 {
+            margin: 0px;
+        }
+    </style>
+
 </head>
 
 <body>
     <!-- All content goes here -->
-    <div>
+    <div id="all-contents">
         <nav>
-<h1>Kenny's Awesome Website</h1>
+            <h1>Kenny's Awesome Website</h1>
+            <ul id=nav-ul">
+                <li class="nav-li">
+                    <a href="index.html"> Home </a>
+                </li>
+                <li class="nav-li">
+                    <a href="portfolio.html"> Portfolio</a>
+                </li>
+            </ul>
         </nav>
 
         <main>
             <!--Sidebar section-->
-            <div>
-                <img src="">
+            <div class="sidebar">
+                <img class="sidebar-img" src="Images/IMG_0191.jpg">
             </div>
 
             <!--Content section-->
-            <div>
+            <div class="content">
                 <h2>Kenny Johnston</h2>
                 <p>Teacher at Arden Cahill Academy
                     <!--Interests section-->
-                <div>
+                <div id="interests">
                     <h3>Interests</h3>
                     <ul>
                         <li>Hydroponics</li>
